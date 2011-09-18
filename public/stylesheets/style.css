@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+  overflow: hidden;
+  font: 16px Arial, sans-serif;
+}
+body {
+  background: none repeat scroll 0 0 #EEEEEE;
+  min-width: 800px;
+  min-height: 600px;
+}
+#header {
+  background: url('/images/logo.png') no-repeat 10px 12px;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #cccccc;
+  background-color: white;
+  margin-bottom: 10px;
+}
+#header div {
+  float: right;
+  margin-top: 30px;
+  margin-right: 15px;
+  font: 20px sans-serif;
+  font-weight: bold;
+  color: #99CCFF;
+}
+#header div #counter {
+  font-size: 30px;
+}
+#chatarea {
+  overflow: auto;
+  background: none repeat scroll 0 0 #FFF;
+  border: 1px solid #CCC;
+  margin: 0 10px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#chatarea div {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+#controls {
+  overflow: hidden;
+  margin: 10px 0;
+}
+#connect {
+  background: none repeat scroll 0 0 #FFF;
+  float: left;
+  width: 120px;
+  height: 85px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #cccccc;
+  margin: 0 10px;
+}
+#connect #btn_left {
+  background: none repeat scroll 0 0 white;
+  border: 0 none;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#send {
+  background: none repeat scroll 0 0 #FFF;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  float: left;
+  width: 120px;
+  height: 85px;
+  border: 1px solid #cccccc;
+  margin: 0 10px;
+}
+#send #btn_right {
+  background: none repeat scroll 0 0 white;
+  border: 0 none;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: sans-serif;
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#message {
+  float: left;
+  width: auto;
+  border: 1px solid #cccccc;
+  height: 85px;
+  background-color: white;
+}
+#message textarea {
+  padding: 3px;
+  border: none;
+  font: 16px sans-serif;
+}
+#message textarea:focus {
+  outline: 0;
+}
+#message textarea:disabled {
+  outline: 0;
+  background-color: white;
+}
+div.btn_text {
+  color: #99CCFF;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 0;
+  margin-top: 0.25em;
+}
+.stranger {
+  color: red;
+  font-weight: bold;
+}
+.you {
+  color: blue;
+  font-weight: bold;
+}

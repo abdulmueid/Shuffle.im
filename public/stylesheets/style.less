@@ -1,0 +1,137 @@
+@block-space: 10px;
+@button-height: 85px;
+@button-width: 120px;
+@border-radius: 8px;
+@border-color: #CCC;
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+    font: 16px Arial,sans-serif;
+}
+body {
+    background: none repeat scroll 0 0 #EEEEEE;
+    min-width: 800px;
+    min-height: 600px;
+}
+#header {
+    background: url('/images/logo.png') no-repeat 10px 12px;
+    width: 100%;
+    height:80px;
+    border-bottom: 1px solid @border-color;
+    background-color: white;
+    margin-bottom: @block-space;
+    div {
+        float: right;
+        margin-top: 30px;
+        margin-right: 15px;
+        font: 20px sans-serif;
+        font-weight: bold;
+        color: #99CCFF;
+        #counter {
+            font-size: 30px;
+        }
+    }
+}
+#chatarea {
+    overflow: auto;
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #CCC;
+    margin: 0 @block-space;
+    -webkit-border-top-left-radius: @border-radius;
+    -webkit-border-top-right-radius: @border-radius;
+    -moz-border-radius-topleft: @border-radius;
+    -moz-border-radius-topright: @border-radius;
+    border-top-left-radius: @border-radius;
+    border-top-right-radius: @border-radius;
+    div {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
+#controls {
+    overflow: hidden;
+    margin: @block-space 0;
+}
+#connect {
+    background: none repeat scroll 0 0 #FFF;
+    float: left;
+    width: @button-width;
+    height: @button-height;
+    -webkit-border-bottom-left-radius: @border-radius;
+    -moz-border-radius-bottomleft: @border-radius;
+    border-bottom-left-radius: @border-radius;
+    border: 1px solid @border-color;
+    margin: 0 @block-space;
+    #btn_left {
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        -webkit-border-bottom-left-radius: @border-radius;
+        -moz-border-radius-bottomleft: @border-radius;
+        border-bottom-left-radius: @border-radius;
+        font-family: sans-serif;
+        font-size: 1em;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+#send {
+    background: none repeat scroll 0 0 #FFF;
+    -webkit-border-bottom-right-radius: @border-radius;
+    -moz-border-radius-bottomright: @border-radius;
+    border-bottom-right-radius: @border-radius;
+    float: left;
+    width: @button-width;
+    height: @button-height;
+    border: 1px solid @border-color;
+    margin: 0 @block-space;
+    #btn_right {
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        -webkit-border-bottom-right-radius: @border-radius;
+        -moz-border-radius-bottomright: @border-radius;
+        border-bottom-right-radius: @border-radius;
+        font-family: sans-serif;
+        font-size: 1em;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+#message {
+    float: left;
+    width: auto;
+    border: 1px solid @border-color;
+    height: @button-height;
+    background-color: white;
+    textarea {
+        padding: 3px;
+        border: none;
+        font: 16px sans-serif;
+    }
+    textarea:focus {
+        outline: 0;
+    }
+    textarea:disabled {
+        outline: 0;
+        background-color: white;
+    }
+}
+div.btn_text {
+    color: #99CCFF;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 0;
+    margin-top: 0.25em;
+}
+.stranger {
+    color: red;
+    font-weight: bold;
+}
+.you {
+    color: blue;
+    font-weight: bold;
+}
