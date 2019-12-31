@@ -2,7 +2,7 @@
   "name": "shuffle",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.4.6",
+    "express": "3.11.0",
     "less": ">= 0.0.1",
     "jade": ">= 0.0.1",
     "socket.io": ">= 0.8.4"
